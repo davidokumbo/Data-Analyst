@@ -1,0 +1,5 @@
+# Ignore executables
+*.exe
+
+# Ignore Crystal Reports installers
+CRYSTAL REPORT/
