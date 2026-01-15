@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>David Okumbo</Author>
+  <LastAuthor>David Okumbo</LastAuthor>
+  <Created>2026-01-14T15:13:31Z</Created>
+  <LastSaved>2026-01-14T15:17:55Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7300</WindowHeight>
+  <WindowWidth>19200</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="tenants">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="16" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:AutoFitWidth="0" ss:Width="261"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="150.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="159"/>
+   <Row>
+    <Cell><Data ss:Type="String">id;name;email</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">Id</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Name</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Email</Data></Cell>
+    <Cell><Data ss:Type="String">Corrected_Email_Address</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">1;Amina Mwangi;amina.mwangi@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">1</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Amina Mwangi</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Amina.Mwangi@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">amina.mwangi.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Mwangi</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">2;Brian Otieno;brian.otieno@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">2</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Brian Otieno</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Brian.Otieno@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">brian.otieno.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Otieno</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3;Carol Wanjiru;carol.wanjiru@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">3</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Carol Wanjiru</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Carol.Wanjiru@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">carol.wanjiru.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Wanjiru</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">4;David Kiptoo;david.kiptoo@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">4</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">David Kiptoo</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">David.Kiptoo@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">david.kiptoo.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Kiptoo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">5;Eunice Njeri;eunice.njeri@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">5</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Eunice Njeri</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Eunice.Njeri@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">eunice.njeri.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Njeri</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">6;Farah Hassan;farah.hassan@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">6</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Farah Hassan</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Farah.Hassan@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">farah.hassan.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Hassan</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">7;George Ouma;george.ouma@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">7</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">George Ouma</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">George.Ouma@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">george.ouma.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Ouma</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">8;Hannah Achieng;hannah.achieng@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">8</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Hannah Achieng</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Hannah.Achieng@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">hannah.achieng.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Achieng</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">9;Ian Wachira;ian.wachira@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">9</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Ian Wachira</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Ian.Wachira@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">ian.wachira.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Wachira</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">10;Joy Wambui;joy.wambui@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">10</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Joy Wambui</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Joy.Wambui@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">joy.wambui.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Wambui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">11;Kelvin Muli;kelvin.muli@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">11</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Kelvin Muli</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Kelvin.Muli@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">kelvin.muli.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Muli</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">12;Lydia Chebet;lydia.chebet@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">12</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Lydia Chebet</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Lydia.Chebet@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">lydia.chebet.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Chebet</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">13;Mark Ndungu;mark.ndungu@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">13</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Mark Ndungu</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Mark.Ndungu@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">mark.ndungu.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Ndungu</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">14;Naomi Nyawira;</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">14</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Naomi Nyawira</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String"></Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">naomi.nyawira.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Nyawira</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">15;Oscar Owino;oscar.owino@example.com</Data></Cell>
+    <Cell ss:Formula="=PROPER(LEFT(RC[-1],FIND(&quot;;&quot;,RC[-1])-1))"><Data
+      ss:Type="String">15</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(MID(RC[-2],FIND(&quot;;&quot;,RC[-2])+1,FIND(&quot;;&quot;,RC[-2],FIND(&quot;;&quot;,RC[-2])+1)-(FIND(&quot;;&quot;,RC[-2])+1)))"><Data
+      ss:Type="String">Oscar Owino</Data></Cell>
+    <Cell
+     ss:Formula="=PROPER(RIGHT(RC[-3],LEN(RC[-3])-FIND(&quot;;&quot;,RC[-3],FIND(&quot;;&quot;,RC[-3])+1)))"><Data
+      ss:Type="String">Oscar.Owino@Example.Com</Data></Cell>
+    <Cell
+     ss:Formula="=LOWER(TRIM(MID(RC[-4],FIND(&quot;;&quot;,RC[-4])+1,FIND(&quot; &quot;,RC[-4],FIND(&quot;;&quot;,RC[-4])+1)-FIND(&quot;;&quot;,RC[-4])))&amp;&quot;.&quot;&amp;TRIM(MID(RC[-4],FIND(&quot; &quot;,RC[-4]), FIND(&quot;;&quot;,RC[-4],FIND(&quot; &quot;,RC[-4])) - FIND(&quot; &quot;,RC[-4])))&amp;&quot;.&quot;&amp;&quot;@Example.Com&quot;)"><Data
+      ss:Type="String">oscar.owino.@example.com</Data></Cell>
+    <Cell
+     ss:Formula="=TRIM( MID(RC[-5], FIND(&quot; &quot;,RC[-5]),  FIND(&quot;;&quot;,RC[-5],FIND(&quot; &quot;,RC[-5])) - FIND(&quot; &quot;,RC[-5])))"><Data
+      ss:Type="String">Owino</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+     <RangeSelection>R1C3:R2C3</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

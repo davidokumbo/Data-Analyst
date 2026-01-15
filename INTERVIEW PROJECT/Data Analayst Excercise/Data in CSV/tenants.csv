@@ -1,0 +1,16 @@
+id;name;email,Id,Name,Email,Corrected_Email_Address,
+1;Amina Mwangi;amina.mwangi@example.com,1,Amina Mwangi,Amina.Mwangi@Example.Com,Amina.Mwangi.@Example.Com,Mwangi
+2;Brian Otieno;brian.otieno@example.com,2,Brian Otieno,Brian.Otieno@Example.Com,Brian.Otieno.@Example.Com,Otieno
+3;Carol Wanjiru;carol.wanjiru@example.com,3,Carol Wanjiru,Carol.Wanjiru@Example.Com,Carol.Wanjiru.@Example.Com,Wanjiru
+4;David Kiptoo;david.kiptoo@example.com,4,David Kiptoo,David.Kiptoo@Example.Com,David.Kiptoo.@Example.Com,Kiptoo
+5;Eunice Njeri;eunice.njeri@example.com,5,Eunice Njeri,Eunice.Njeri@Example.Com,Eunice.Njeri.@Example.Com,Njeri
+6;Farah Hassan;farah.hassan@example.com,6,Farah Hassan,Farah.Hassan@Example.Com,Farah.Hassan.@Example.Com,Hassan
+7;George Ouma;george.ouma@example.com,7,George Ouma,George.Ouma@Example.Com,George.Ouma.@Example.Com,Ouma
+8;Hannah Achieng;hannah.achieng@example.com,8,Hannah Achieng,Hannah.Achieng@Example.Com,Hannah.Achieng.@Example.Com,Achieng
+9;Ian Wachira;ian.wachira@example.com,9,Ian Wachira,Ian.Wachira@Example.Com,Ian.Wachira.@Example.Com,Wachira
+10;Joy Wambui;joy.wambui@example.com,10,Joy Wambui,Joy.Wambui@Example.Com,Joy.Wambui.@Example.Com,Wambui
+11;Kelvin Muli;kelvin.muli@example.com,11,Kelvin Muli,Kelvin.Muli@Example.Com,Kelvin.Muli.@Example.Com,Muli
+12;Lydia Chebet;lydia.chebet@example.com,12,Lydia Chebet,Lydia.Chebet@Example.Com,Lydia.Chebet.@Example.Com,Chebet
+13;Mark Ndungu;mark.ndungu@example.com,13,Mark Ndungu,Mark.Ndungu@Example.Com,Mark.Ndungu.@Example.Com,Ndungu
+14;Naomi Nyawira;,14,Naomi Nyawira,,Naomi.Nyawira.@Example.Com,Nyawira
+15;Oscar Owino;oscar.owino@example.com,15,Oscar Owino,Oscar.Owino@Example.Com,Oscar.Owino.@Example.Com,Owino
